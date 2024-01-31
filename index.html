@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en' id='html'>
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="A Computer Science student here, let's get to know each other!">
+     <meta name="keywords" content="Python,Java,C++,HTML,CSS,JS,Javascript,Programmer,Developer,Kervin,Clyde,Padilla,userkace">
+     <meta name="author" content="Kervin Padilla">
+     <meta name="revised" content="Kervin Padilla, 10/12/2023">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>WYBMV?</title>
+
+     <link rel="shortcut icon" href="./media/love.ico" type="image/x-icon">
+     <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div id="wrap">
+     <img id="1" src="./media/valentine.gif" alt="valentine gif">
+     <img id="2" style="opacity: 0; position: absolute;" src="./media/sad.gif" alt="sad gif">
+     <div id="button-wrap">
+          <button onclick="window.location.href='https://m.me/kerubinkuraido?text=My%20dearest%20Kervin,%20The%20flutter%20in%20my%20heart%20since%20your%20question%20has%20barely%20settled,%20and%20words%20seem%20to%20dance%20just%20out%20of%20reach,%20trying%20to%20express%20the%20joy%20your%20request%20brought.%20To%20be%20your%20Valentine%20fills%20me%20with%20a%20warmth%20that%20rivals%20the%20midday%20sun,%20and%20the%20answer,%20darling%20Kervin,%20is%20a%20resounding%20YES!%20With%20a%20heart%20full%20of%20anticipation,%20Shekinah%20Joy%20Angeles';">
+               YES
+          </button>
+          <button id="myButton" onclick="html.style.backgroundColor = '#000000';">NO</button>
+     </div>
+</div>
+
+
+</body>
+
+<script>
+     const myButton = document.getElementById("myButton");
+     const html = document.getElementById("html");
+     const dos = document.getElementById("2");
+     const uno = document.getElementById("1");
+
+     myButton.addEventListener("click", () => {
+       const wrap = document.getElementById("wrap");  // Get the containing element
+       const wrapWidth = wrap.offsetWidth;  // Get the width of the containing element
+       const wrapHeight = wrap.offsetHeight; // Get the height of the containing element
+   
+       // Generate random coordinates within the containing element's boundaries
+       const randomX = Math.random() * (wrapWidth - myButton.offsetWidth);
+       const randomY = Math.random() * (wrapHeight - myButton.offsetHeight);
+   
+       // Set the button's position using absolute coordinates
+       myButton.style.position = "absolute";
+       myButton.style.left = randomX + "px";
+       myButton.style.top = randomY + "px";
+       html.style.backgroundColor = "#000000";
+       dos.style.opacity = "100%";
+       dos.style.position = "relative";
+       uno.style.opacity = "0";
+       uno.style.position = "absolute";
+       
+     });
+   </script>
+
+</html>
