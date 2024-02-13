@@ -235,17 +235,16 @@ body {
   cursor: pointer;
 }
 
-html{
+
+.one, .two, .three, .five, .six, .seven, .eight, .nine{
   font-family: 'Single Day', cursive;
 }
 
-.hbd-chatbox{
+#onl-txt, .four{
   font-family: 'Courier New', Courier, monospace;
 }
 
-#hbd-chatbox{
-  font-family: 'Courier New', Courier, monospace;
-}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
