@@ -239,6 +239,10 @@ body {
   font-family: 'Single Day', cursive;
 }
 
+.hbd-chatbox{
+  font-family: 'Courier New', Courier, monospace;
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
